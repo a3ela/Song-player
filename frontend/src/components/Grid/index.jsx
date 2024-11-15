@@ -5,6 +5,7 @@ const Grid = ({ header, children }) => {
   return (
     <Wrapper>
       <h1>{header}</h1>
+      <hr />
       <Content>{children}</Content>
     </Wrapper>
   );

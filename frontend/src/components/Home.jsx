@@ -5,6 +5,7 @@ import musics from "../source";
 import Hero from "./Hero";
 import Grid from "./Grid";
 import Card from "./Card";
+import Spinner from "./Spinner";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
           <Card key={music.id} {...music} />
         ))}
       </Grid>
+      <Spinner />
     </>
   );
 };
