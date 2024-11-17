@@ -1,13 +1,18 @@
 import React from "react";
-import { Wrapper, Content } from "./Grid.style";
+import { Container, Wrapper, Content } from "./Grid.style";
+
+//components
+import FilterForm from "../FilterForm";
 
 const Grid = ({ header, children }) => {
   return (
-    <Wrapper>
-      <h1>{header}</h1>
-      <hr />
+    <Container>
+      <Wrapper>
+        <h1>{header}</h1>
+        <FilterForm />
+      </Wrapper>
       <Content>{children}</Content>
-    </Wrapper>
+    </Container>
   );
 };
 

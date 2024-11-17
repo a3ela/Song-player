@@ -28,8 +28,8 @@ export const GlobalStyle = createGlobalStyle`
   body {
     background-color: var(--black);
     color: var(--white);
-    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-transform: uppercase;
+    font-family:"Monument Extended", "Helvetica", Arial, sans-serif;
   }
 
   h1 {
@@ -44,7 +44,13 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   p {
+    
     font-size: 1rem;
     color: var(--white);
+    text-transform: none;
+  }
+  button {
+    text-transform: uppercase;
+    font-weight: 600;
   }
 `;
